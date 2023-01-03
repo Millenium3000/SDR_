@@ -24,3 +24,26 @@ const changeTheme = type => {
   document.documentElement.style.setProperty('--primary', `var(--${type})`);
   document.documentElement.style.setProperty('--primary-light', `var(--${type}-transparent)`);
 };
+
+window.onload = function(){
+  window.setInterval(function(){
+       var now = new Date();
+        var clock = document.getElementById("clock");
+      clock.innerHTML = now.toLocaleTimeString();
+  }, 1000);
+ };
+
+
+
+
+//  вставляю лампочку
+
+
+// window.onload = function(){
+//   window.setInterval(function(){
+//        var now = new Date();
+//         var clock = document.getElementById("clock");
+//       clock.innerHTML = now.toLocaleTimeString();
+//   }, 1000);
+//  };
+
